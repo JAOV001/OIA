@@ -1,0 +1,19 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Blox Fruits", "Synapse")
+local Tab = Window:NewTab("Shop")
+local Section = Tab:NewSection("Shop")
+Section:NewButton("Superhuman", "Cilck", function()
+local A_1 = "BuySuperhuman"
+local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+Event:InvokeServer(A_1)
+end)
+Section:NewButton("SharkmanKarate", "Cilck", function()
+local A_1 = "BuySharkmanKarate"
+local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+Event:InvokeServer(A_1)
+end)
+Section:NewButton("DeathStep", "Cilck", function()
+local A_1 = "BuyDeathStep"
+local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+Event:InvokeServer(A_1)
+end)
